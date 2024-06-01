@@ -8,9 +8,12 @@ Considerando el conjunto de datos el objetivo es poder es hacer analisis explora
 ## objetivos especificos
 Leer archivos que contengan conjuntos de datos
 Conocer las caracteristicas de los datos
+
 Obtener los datos que no tienen registro
 Obtener las medidas estadisticas básicas de las variables cuantitativas
 visualizar graficamente el comportamiento de los datos
+Emplear funciones de R y métodos computacionales para hacer cálculos eficientes sobre toda base de datos (por ejemplo, programación en paralelo, etc)
+Es realizar una reducción d la base original a una por día, por ejemplo. Luego realizar gráficos temporales.
 
 
 # 1. Introduccion
