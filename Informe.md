@@ -6,8 +6,12 @@ Dado el listado de registros de atenciones de urgencia en el pais, se quiere sab
 Considerando el conjunto de datos el objetivo es poder es hacer analisis exploratorio de datos utilizando el lenguaje r, para responder al cuestionamiento planteado
 
 ## objetivos especificos
+Leer archivos que contengan conjuntos de datos
+Conocer las caracteristicas de los datos
+Obtener los datos que no tienen registro
 Obtener las medidas estadisticas básicas de las variables cuantitativas
-Aplicar tecnicas que permitan hacer l
+visualizar graficamente el comportamiento de los datos
+
 
 # 1. Introduccion
 # 2. Preprocesamiento de datos
