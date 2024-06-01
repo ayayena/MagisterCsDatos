@@ -14,7 +14,7 @@ Obtener las medidas estadisticas básicas de las variables cuantitativas
 visualizar graficamente el comportamiento de los datos
 Emplear funciones de R y métodos computacionales para hacer cálculos eficientes sobre toda base de datos (por ejemplo, programación en paralelo, etc)
 Es realizar una reducción d la base original a una por día, por ejemplo. Luego realizar gráficos temporales.
-establecer paletas de colores
+establecer paletas de colores 
 
 
 # 1. Introduccion
