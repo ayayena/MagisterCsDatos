@@ -3,7 +3,7 @@
 Dado el listado de registros de atenciones de urgencia en el pais, se quiere saber donde y que días se establecen mas atenciones de este tipo
 
 ## Objetivo
-Considerando el conjunto de datos el objetivo es poder es hacer analisis exploratorio de datos utilizando el lenguaje r, para responder al cuestionamiento planteado
+Considerando el conjunto de datos el objetivo es poder es hacer analisis exploratorio de datos utilizando el lenguaje r, para responder al cuestionamiento planteado, con conexion a base de datos de postgres
 
 ## objetivos especificos
 Leer archivos que contengan conjuntos de datos
