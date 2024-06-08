@@ -33,9 +33,9 @@ na <- is.na(atenUr)
 
 #obtener variable id establecimiento
 
-total<- filter(atenUr, nombrecomuna == "Puerto Montt" & !is.na(idestablecimiento))
+comPmont<- filter(atenUr, nombrecomuna == "Puerto Montt" & !is.na(idestablecimiento))
 
-View(total)
-
-#ggplot(total)
-#q()
+View(comPmont)
+glimpse(comPmont)
+hist(comPmont$total)
+summary(comPmont$total)
