@@ -185,7 +185,8 @@ dataAten$NEstablecimiento<-replace(dataAten$NEstablecimiento,dataAten$NEstableci
 dataAten$NEstablecimiento<-replace(dataAten$NEstablecimiento,dataAten$NEstablecimiento == "Centro de Salud Familiar R\xedo Negro Hornopir\xe9n","Centro de Salud Familiar Rio Negro Hornopiren")
 dataAten$NEstablecimiento<-replace(dataAten$NEstablecimiento,dataAten$NEstablecimiento == "SUR Cocham\xf3 - R\xedo Puelo","Sur Cochamo - Rio Puelo")
 dataAten$NEstablecimiento<-replace(dataAten$NEstablecimiento,dataAten$NEstablecimiento == "SAPU Angelm\xf3","Sapu Angelmo")
-###########################
+
+#Definicion Varibales Categoricas
 #obnter el conjunto de observacionde de las comunas con dependencia  del servico salud del reloncavi
 dataRegion=dataAten%>%filter(CodigoDependencia == 24)
 dataRegion
@@ -193,16 +194,31 @@ tregion<-table(dataRegion$NombreComuna)
 tregion
 glimpse(dataRegion)
 ggplot(dataRegion, aes(x = NombreComuna)) +                      
-  geom_bar(width=0.5, colour="red", fill="skyblue")+
-  ggtitle("Diagrama de barras")  
+  geom_bar(width=0.5, colour="#eb3c46", fill="#eb3c46")+
+  ggtitle("Diagrama de Atenciones Urgencias 2023")  +
+  labs(x = NULL, y = "Número de observaciones") 
 
 
-#obtener el conjunto de datos de la dependencia del reloncavi
+
+#obtener el conjunto de datos de la establecmientos de la dependencia del reloncavi
 testablecmiento<-table(dataRegion$NEstablecimiento)
 testablecmiento
 glimpse(testablecmiento)
-
 ggplot(dataRegion, aes(x = NEstablecimiento)) +                      
-  geom_bar(width=0.5, colour="red", fill="skyblue")+
+  geom_bar(width=0.5, colour="#e94860", fill="#e94860")+
   ggtitle("Diagrama de barras")  
+
+
+#Definicion Variables Cuantitativas
+#variable de total
+ggplot(dataRegion, aes(x=Total)) + 
+  geom_histogram(color="#eb3c46", fill="#d3def2")
+
+#variable de menores de   1 año
+ggplot(dataRegion, aes(x=Menores_1)) + 
+  geom_histogram(color="#eb3c46", fill="#d3def2")
+
+#variable de menores de   1 año
+ggplot(dataRegion, aes(x=De_1_a_4)) + 
+  geom_histogram(color="#eb3c46", fill="#d3def2")
 
