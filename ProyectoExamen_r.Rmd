@@ -1,0 +1,42 @@
+---
+title: "Proyecto Examen"
+author: "Carola Soto"
+date: "2024-07-10"
+output: html_document
+---
+```{r}
+#librerias
+library(readr)
+library(dplyr)
+```
+
+
+```{r}
+library(ggplot2)
+```
+```{r}
+#obtencion dataset
+setwd("D:/Magister Ciencias Datos UDLA/Clases R/Practicos R/MagisterCsDatos/")
+AtenUrgencia <- read_delim("AtencionesUrgencia2023.csv", 
+                           delim = ";", escape_double = FALSE, trim_ws = TRUE)
+AtenUrgencia
+```
+
+
+```{r}
+#creacion grupo comunas
+gruposcomunast=aggregate(Total ~ NombreComuna, data=AtenUrgencia, FUN = sum)
+class(gruposcomunast)
+```
+
+```{r}
+k_medias <-function(dataset=NULL, variable=NULL,k=NULL)
+{
+  #graficar bloxplot con bloque por los grupos
+  return(output)
+}
+```
+
+
+
+
